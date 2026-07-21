@@ -1,4 +1,4 @@
-name: GitHubActions Demo
+name: GitHubActions Multi Stages Demo
 on:
   workflow_dispatch:
   push:
