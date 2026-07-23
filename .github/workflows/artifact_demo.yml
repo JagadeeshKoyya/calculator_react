@@ -32,22 +32,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
       
-      - name: Cache dependency
-        id: cache-npm
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: dependency-build-${{ hashFiles('**/package-lock.json')}}
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run build
-        run: npm run build
-
       - name: download artifacts
         uses: actions/download-artifact@v4
         with:
