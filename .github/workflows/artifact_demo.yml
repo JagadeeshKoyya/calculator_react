@@ -1,7 +1,7 @@
 name: artifacts demo
 on:
   workflow_dispatch:
-  push:
+  # push:
 jobs:
   build:
     runs-on: ubuntu-latest
